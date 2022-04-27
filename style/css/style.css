@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --orange: #FF9A3E;
+  --light-orange: #FFBC96;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 425px) {
+  body {
+    background: brown;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin: 2.5em;
+    padding: 0;
+  }
+  p {
+    color: white;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  .header {
+    background: var(--orange);
+    border-radius: 15px;
+  }
+  .basarili {
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .basarili .basarili-container {
+    text-align: center;
+    height: 230px;
+    width: 230px;
+    display: inline-block;
+    -webkit-box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 10px black;
+    border-radius: 15px;
+  }
+  .basarili .basarili-container p {
+    padding: 0.75em 0.5em;
+    color: black;
+  }
+  .basarili .basarili-container img {
+    height: 100px;
+    width: 100px;
+  }
+  .giris {
+    padding: 5em 7.5em;
+  }
+  .giris .container .container {
+    border-radius: 15px;
+  }
+  .giris .container .container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 15px;
+  }
+  .giris .container .container form div {
+    background: var(--light-orange);
+    border-radius: 15px;
+    padding: 0.5em 1em;
+  }
+  .giris .container .container form input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em;
+    margin: 0.75em 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+  }
+  .giris .container .container form .button {
+    color: white;
+    font-size: 1em;
+    background: var(--light-orange);
+    border-radius: 15px;
+    width: auto;
+    padding: 0.5em 1em;
+    margin: 0.75em auto;
+  }
+  .border {
+    border-top: 5px dashed #DEDEDE;
+    width: 100%;
+  }
+  .video {
+    padding: 7.5em;
+  }
+  .video p {
+    margin-top: 0;
+  }
+  .video .button {
+    color: white;
+    font-size: 1em;
+    background: var(--light-orange);
+    border-radius: 15px;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 3em 5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: green;
+  }
+}
+/*# sourceMappingURL=style.css.map */
