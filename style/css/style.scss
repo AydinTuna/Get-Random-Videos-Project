@@ -6,17 +6,8 @@
     font-size: 18px;
 }
 
-
-
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 300px) {
     // for mobiles
-    body {
-        background: brown;
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
     body {
         background: white;
         font-family: 'Poppins', sans-serif;
@@ -61,10 +52,8 @@
         }
     }
     
-    
-    
     .giris {
-        padding: 5em 7.5em;
+        padding: 1em 1.25em;
         // filter: blur(5px);
         .container {
     
@@ -114,7 +103,7 @@
     
     .video {
         // filter: blur(5px);
-        padding: 7.5em;
+        padding: 2.5em 1.25em;
     
         p {
             margin-top: 0;
@@ -128,16 +117,65 @@
             border: none;
             box-sizing: border-box;
             width: 100%;
+            padding: 1.5em 2.5em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    // for tablets
+    .giris {
+        padding: 5em 7.5em;
+        
+        .button {
             padding: 3em 5em;
         }
     }
-    
-}
 
+    .video {
+        padding: 7.5em;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
     // for computers
     body {
-        background: green;
+        display: flex;
+        justify-content: center;
     }
 }
+
+@media screen and (max-width: 1440px) and (min-width: 300px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .button {
+        &:hover {
+            color: var(--light-orange) !important;
+            background: white !important;
+            cursor: pointer;
+        }
+    }
+
+    .basarili {
+        position: relative;
+        z-index: 999;
+        left: auto;
+        right: auto;
+        margin-top: 13%;
+
+        .basarili-container {
+            background: white;
+        }
+    }
+}
+
+
+

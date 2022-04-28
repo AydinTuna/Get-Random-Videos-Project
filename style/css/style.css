@@ -5,13 +5,7 @@
   font-size: 18px;
 }
 
-@media only screen and (min-width: 425px) {
-  body {
-    background: brown;
-  }
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   body {
     background: white;
     font-family: 'Poppins', sans-serif;
@@ -52,7 +46,7 @@
     width: 100px;
   }
   .giris {
-    padding: 5em 7.5em;
+    padding: 1em 1.25em;
   }
   .giris .container .container {
     border-radius: 15px;
@@ -96,7 +90,7 @@
     width: 100%;
   }
   .video {
-    padding: 7.5em;
+    padding: 2.5em 1.25em;
   }
   .video p {
     margin-top: 0;
@@ -110,13 +104,60 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
+    padding: 1.5em 2.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .giris {
+    padding: 5em 7.5em;
+  }
+  .giris .button {
     padding: 3em 5em;
+  }
+  .video {
+    padding: 7.5em;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
-    background: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 300px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header {
+    position: absolute;
+    z-index: 0;
+  }
+  .button:hover {
+    color: var(--light-orange) !important;
+    background: white !important;
+    cursor: pointer;
+  }
+  .basarili {
+    position: relative;
+    z-index: 999;
+    left: auto;
+    right: auto;
+    margin-top: 13%;
+  }
+  .basarili .basarili-container {
+    background: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
