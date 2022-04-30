@@ -29,7 +29,17 @@
     
     .basarili {
         justify-content: center;
-    
+        
+        i {
+            margin-top: -1.25em;
+            padding: 0.5em;
+
+            &:hover {
+                cursor: pointer;
+                color: #d8d8d8;
+            }
+        }
+
         .basarili-container {
             text-align: center;
             height: 230px;
@@ -47,6 +57,7 @@
                 height: 100px;
                 width: 100px;
             }
+
         }
     }
     
@@ -168,6 +179,7 @@
         left: auto;
         right: auto;
         margin-top: 13%;
+        display: none;
 
         .basarili-container {
             background: white;
