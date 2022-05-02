@@ -38,6 +38,8 @@ function uyariKapat() {
     giris.style.filter = "blur(5px)";
     video.style.filter = "blur(0px)";
     rastgeleButton.style.pointerEvents = "auto";
+    // giris.style.display = "none";
+    // Giriş yaparken video kısmı gözükmeyecek yaptıktan sonra da giriş kısmı gözükmeyecek
     disabled();
 }
 
