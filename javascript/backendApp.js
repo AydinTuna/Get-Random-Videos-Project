@@ -6,6 +6,6 @@ function EventListeners() {
 }
 
 function getRandomVideo() {
-    rastgeleButton.setAttribute("href", "https://www.youtube.com/");
+    rastgeleButton.setAttribute("href", "https://www.youtube.com/playlist?list=WL");
 }
 
