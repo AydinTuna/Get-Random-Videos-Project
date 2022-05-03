@@ -7,29 +7,31 @@
 }
 
 @media only screen and (min-width: 300px) {
+
     // for mobiles
     body {
         background: white;
         font-family: 'Poppins', sans-serif;
         font-size: 1em;
-        margin: 2.5em;
+        height: 100vh;
+        margin: 0;
         padding: 0;
     }
-    
+
     p {
         color: white;
         margin-bottom: 0.5em;
         font-size: 1em;
     }
-    
+
     .header {
         background: var(--orange);
         border-radius: 15px;
     }
-    
+
     .basarili {
         justify-content: center;
-        
+
         i {
             margin-top: -1.25em;
             padding: 0.5em;
@@ -47,12 +49,12 @@
             display: inline-block;
             box-shadow: 1px 1px 10px black;
             border-radius: 15px;
-        
+
             p {
                 padding: 0.75em 0.5em;
                 color: black;
             }
-        
+
             img {
                 height: 100px;
                 width: 100px;
@@ -60,27 +62,27 @@
 
         }
     }
-    
+
     .giris {
         padding: 1em 1.25em;
-        // filter: blur(5px);
+
         .container {
-    
+
             .container {
-    
+
                 border-radius: 15px;
-    
+
                 form {
                     display: flex;
                     flex-direction: column;
                     border-radius: 15px;
-    
+
                     div {
                         background: var(--light-orange);
                         border-radius: 15px;
                         padding: 0.5em 1em;
                     }
-    
+
                     input {
                         box-sizing: border-box;
                         padding: 1em;
@@ -90,7 +92,7 @@
                         width: 100%;
                         font-size: 1em;
                     }
-    
+
                     .button {
                         color: white;
                         font-size: 1em;
@@ -104,26 +106,20 @@
             }
         }
     }
-    
-    .border {
-        border-top: 5px dashed #DEDEDE;
-        width: 100%;
-    }
-    
+
     .video {
-        // filter: blur(5px);
         padding: 2.5em 1.25em;
 
         .container {
             display: flex;
             flex-direction: column;
         }
-    
+
         p {
             margin-top: 0;
             margin-bottom: 1em;
         }
-    
+
         a {
             text-align: center;
             color: white;
@@ -139,10 +135,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+
     // for tablets
     .giris {
         padding: 5em 7.5em;
-        
+
         .button {
             padding: 3em 5em;
         }
@@ -153,18 +150,11 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    // for computers
-    body {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 @media screen and (min-width: 300px) {
     body {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .header {
@@ -192,7 +182,8 @@
             background: white;
         }
     }
+
+    .video {
+        display: none;
+    }
 }
-
-
-

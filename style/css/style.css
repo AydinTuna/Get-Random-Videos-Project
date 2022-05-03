@@ -10,7 +10,8 @@
     background: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
-    margin: 2.5em;
+    height: 100vh;
+    margin: 0;
     padding: 0;
   }
   p {
@@ -92,10 +93,6 @@
     padding: 0.5em 1em;
     margin: 0.75em auto;
   }
-  .border {
-    border-top: 5px dashed #DEDEDE;
-    width: 100%;
-  }
   .video {
     padding: 2.5em 1.25em;
   }
@@ -138,17 +135,6 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (min-width: 300px) {
   body {
     display: -webkit-box;
@@ -157,6 +143,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header {
     position: absolute;
@@ -177,6 +166,9 @@
   }
   .basarili .basarili-container {
     background: white;
+  }
+  .video {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

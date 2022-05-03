@@ -16,7 +16,6 @@ const data = {
 EventListeners();
 
 function EventListeners() {
-    giris.addEventListener("load", videoBlur());
     form.addEventListener("submit", girisKontrol);
     basariliKapat.addEventListener("click", uyariKapat);
     girisButton.addEventListener("click", saveData);
@@ -27,31 +26,17 @@ function saveData() {
     data.password = sifre.value;
 }
 
-function disabled() {
-    girisButton.setAttribute("disabled", "disabled");
-    email.setAttribute("disabled", "disabled");
-    sifre.setAttribute("disabled", "disabled");
-}
-
 function uyariKapat() {
     basarili.style.display = "none";
-    giris.style.filter = "blur(5px)";
-    video.style.filter = "blur(0px)";
+    giris.style.display = "none";
+    video.style.display = "block";
     rastgeleButton.style.pointerEvents = "auto";
-    // giris.style.display = "none";
-    // Giriş yaparken video kısmı gözükmeyecek yaptıktan sonra da giriş kısmı gözükmeyecek
-    disabled();
 }
 
 function uyariKapatTimer() {
     setTimeout(function() {
         uyariKapat();
     }, 3000);
-}
-
-function videoBlur() {
-    video.style.filter = "blur(5px)";
-    rastgeleButton.style.pointerEvents = "none";
 }
 
 function girisKontrol(e) {
