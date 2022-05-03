@@ -111,6 +111,7 @@
   }
   .video a {
     text-align: center;
+    text-decoration: none;
     color: white;
     font-size: 1em;
     background: var(--light-orange);
