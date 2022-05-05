@@ -19,6 +19,7 @@ function EventListeners() {
     form.addEventListener("submit", girisKontrol);
     basariliKapat.addEventListener("click", uyariKapat);
     girisButton.addEventListener("click", saveData);
+    // rastgeleButton.addEventListener("click", openYT);
 }
 
 function saveData() {

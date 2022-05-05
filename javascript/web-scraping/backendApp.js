@@ -1,12 +1,14 @@
+const request = require('request');
+const cheerio = require('cheerio');
 
-EventListeners();
+request("https://www.youtube.com/playlist?list=WL", (error, response, html) => {
+    if (!error && response.statusCode == 200) {
+        const $ = cheerio.load(html);
 
-function EventListeners() {
-    rastgeleButton.addEventListener("click", openYT);
-}
+        const aTag = $("yt-img-shadow.ytd-topbar-menu-button-renderer");
+        const link = aTag;
 
-function openYT() {
-    rastgeleButton.setAttribute("href", "https://www.youtube.com/playlist?list=WL");
-    rastgeleButton.setAttribute("target", "_blank");
-}
-
+        console.log(aTag.html());
+    
+    }
+});
