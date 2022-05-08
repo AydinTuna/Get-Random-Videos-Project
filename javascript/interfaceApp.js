@@ -1,7 +1,6 @@
 const video = document.querySelector(".video");
 const giris = document.querySelector(".giris");
 const form = document.querySelector("form");
-const rastgeleButton = document.querySelector(".video a");
 const email = document.querySelector("input[type=email]");
 const sifre = document.querySelector("input[type=password]");
 const basarili = document.querySelector(".basarili");
@@ -44,6 +43,8 @@ function girisKontrol(e) {
     if (email.value === data.email && sifre.value === data.password) {
         giris.style.filter = "blur(5px)";
         basarili.style.display = "flex";
+        sifre.setAttribute("disabled", "disabled");
+        email.setAttribute("disabled", "disabled");
         uyariKapatTimer();
         e.preventDefault();
     }
